@@ -1,0 +1,19 @@
+{
+  "backend/main.mo": "Empty Motoko actor placeholder.",
+  "feature_evidence.json": "Feature evidence report mapping a UI change to affected files and components.",
+  "frontend-file-summaries.txt": "Prewritten summaries of major frontend files and components.",
+  "frontend/index.css": "Tailwind base layer with extensive OKLCH theme variables and dark mode overrides.",
+  "frontend/index.html": "HTML root mounting point loading the React app.",
+  "frontend/src/App.tsx": "Main React component orchestrating proposal flow, background, confetti, and final reveal card.",
+  "frontend/src/components/ConfettiBurst.tsx": "Canvas animation generating falling pastel confetti with physics simulation.",
+  "frontend/src/components/FloatingHeartsBackground.tsx": "Generates 15 randomly animated floating heart elements as a decorative background.",
+  "frontend/src/components/HeartRevealCard.tsx": "Heart-shaped congratulatory card with layered shapes and animated decorative hearts.",
+  "frontend/src/components/ProposalButtons.tsx": "Renders evasive No button and large glowing Yes button, triggering acceptance callback.",
+  "frontend/src/hooks/useActor.ts": "Creates and manages authenticated/anonymous backend actors with React Query and identity handling.",
+  "frontend/src/hooks/useEvasiveButton.ts": "Hook computing randomized evasive button positions with pointer event handlers and bounds checks.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Full Internet Identity provider managing auth client creation, login flow, stored identities, and status flags.",
+  "frontend/src/index.css": "Defines Tailwind layers, pastel theme color variables, dark-mode variants, global styling, and custom animations for floating hearts, glowing buttons, and heart-pop effects.",
+  "frontend/src/main.tsx": "Bootstraps the React app, wrapping it with React Query and Internet Identity providers before rendering App.",
+  "frontend/tailwind.config.js": "Configures Tailwind with custom oklch color variables, animations, typography/container plugins, and extended theming for the pastel UI.",
+  "project_state.json": "Contains project metadata and feature definitions for a pastel 'Propose Day' landing page with floating hearts, evasive 'No' button, and celebratory reveal on 'Yes' click."
+}

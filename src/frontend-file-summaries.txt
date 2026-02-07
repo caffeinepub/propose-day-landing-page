@@ -1,0 +1,10 @@
+{
+  "frontend/src/index.css": "Global styles with pastel pink/yellow/cream OKLCH color system, custom animations for floating hearts, glowing button, and heart reveal card with reduced-motion support.",
+  "frontend/src/App.tsx": "Main application component managing proposal state, rendering centered proposal buttons with floating hearts background, confetti burst on acceptance, and heart reveal card without headline text.",
+  "frontend/src/components/FloatingHeartsBackground.tsx": "Ambient background component rendering 15 floating heart emojis with randomized positions, sizes, durations, and drift patterns for a cozy aesthetic.",
+  "frontend/src/components/ProposalButtons.tsx": "Interactive buttons component with evasive \"No\" button that jumps on hover/touch and large glowing pink \"Yessss miss madam baby ji\" button.",
+  "frontend/src/hooks/useEvasiveButton.ts": "Custom hook managing random position calculation and pointer event handlers for the evasive \"No\" button with viewport bounds checking, now accepting nullable HTMLElement refs.",
+  "frontend/src/components/HeartRevealCard.tsx": "Celebratory heart-shaped card component displaying congratulations message with decorative bouncing hearts around it.",
+  "frontend/src/components/ConfettiBurst.tsx": "Canvas-based confetti animation component creating 150 pastel-colored particles bursting from center with physics simulation.",
+  "frontend/tailwind.config.js": "Tailwind configuration with extended theme settings, maintaining default radius and adding custom font family for the pastel aesthetic."
+}

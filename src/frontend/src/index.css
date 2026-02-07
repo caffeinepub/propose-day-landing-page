@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 1.5rem;
+        /* Pastel pink/cream/yellow palette */
+        --background: 0.97 0.02 15;
+        --foreground: 0.35 0.05 350;
+        --card: 0.98 0.03 20;
+        --card-foreground: 0.35 0.05 350;
+        --popover: 0.98 0.03 20;
+        --popover-foreground: 0.35 0.05 350;
+        --primary: 0.75 0.15 350;
+        --primary-foreground: 1 0 0;
+        --secondary: 0.92 0.05 50;
+        --secondary-foreground: 0.35 0.05 350;
+        --muted: 0.95 0.03 40;
+        --muted-foreground: 0.55 0.04 340;
+        --accent: 0.88 0.08 30;
+        --accent-foreground: 0.35 0.05 350;
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        --border: 0.90 0.04 340;
+        --input: 0.90 0.04 340;
+        --ring: 0.75 0.15 350;
+        --chart-1: 0.75 0.15 350;
+        --chart-2: 0.88 0.08 30;
+        --chart-3: 0.92 0.05 50;
+        --chart-4: 0.82 0.12 340;
+        --chart-5: 0.85 0.10 20;
+    }
+
+    .dark {
+        --background: 0.25 0.03 340;
+        --foreground: 0.97 0.02 15;
+        --card: 0.30 0.04 345;
+        --card-foreground: 0.97 0.02 15;
+        --popover: 0.30 0.04 345;
+        --popover-foreground: 0.97 0.02 15;
+        --primary: 0.82 0.12 340;
+        --primary-foreground: 0.97 0.02 15;
+        --secondary: 0.35 0.05 350;
+        --secondary-foreground: 0.97 0.02 15;
+        --muted: 0.35 0.05 350;
+        --muted-foreground: 0.65 0.05 340;
+        --accent: 0.45 0.08 355;
+        --accent-foreground: 0.97 0.02 15;
+        --destructive: 0.704 0.191 22.216;
+        --destructive-foreground: 0.97 0.02 15;
+        --border: 0.40 0.05 345;
+        --input: 0.40 0.05 345;
+        --ring: 0.82 0.12 340;
+        --chart-1: 0.82 0.12 340;
+        --chart-2: 0.75 0.10 355;
+        --chart-3: 0.68 0.08 30;
+        --chart-4: 0.72 0.12 345;
+        --chart-5: 0.78 0.10 20;
+    }
+
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+@keyframes float-up {
+    0% {
+        transform: translateY(100vh) translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.6;
+    }
+    90% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(-20vh) translateX(var(--drift-x, 0)) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 20px oklch(0.75 0.15 350 / 0.5),
+                    0 0 40px oklch(0.75 0.15 350 / 0.3),
+                    0 0 60px oklch(0.75 0.15 350 / 0.2);
+    }
+    50% {
+        box-shadow: 0 0 30px oklch(0.75 0.15 350 / 0.7),
+                    0 0 60px oklch(0.75 0.15 350 / 0.5),
+                    0 0 90px oklch(0.75 0.15 350 / 0.3);
+    }
+}
+
+@keyframes heart-pop {
+    0% {
+        transform: scale(0) rotate(-10deg);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1) rotate(5deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.float-heart {
+    animation: float-up linear infinite;
+    will-change: transform, opacity;
+}
+
+.glow-button {
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.heart-reveal {
+    animation: heart-pop 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .float-heart,
+    .glow-button,
+    .heart-reveal {
+        animation: none;
+    }
+}

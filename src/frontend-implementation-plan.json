@@ -1,0 +1,23 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Remove landing headline text and keep proposal buttons only",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "summary": "Remove the central proposal/question headline from the pre-acceptance landing view while keeping the two existing CTA buttons, background, confetti, and heart reveal behavior unchanged.",
+      "acceptanceCriteria": [
+        "On initial load (when not accepted), there is no headline/question text rendered above or around the buttons.",
+        "The existing two-button layout remains functional: the \"No\" button still evades pointer/touch interaction and the \"Yessss miss madam baby ji\" button is still clickable.",
+        "Clicking the \"Yessss miss madam baby ji\" button still triggers the existing confetti effect and shows the existing heart-shaped reveal card."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Remove the <h1> proposal/question headline from the not-accepted branch so the landing screen renders only the existing ProposalButtons over the existing FloatingHeartsBackground; keep acceptance state wiring intact to preserve confetti and HeartRevealCard behavior."
+        }
+      ]
+    }
+  ]
+}

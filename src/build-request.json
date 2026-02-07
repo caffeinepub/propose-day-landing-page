@@ -1,0 +1,47 @@
+{
+  "kind": "build_request",
+  "title": "Remove central question text and show only proposal buttons",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "text": "Remove the central proposal/question headline text from the landing screen so that, before acceptance, the UI shows only the two existing call-to-action buttons (the evasive \"No\" button and the glowing \"Yessss miss madam baby ji\" button) over the existing floating-hearts background.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Remove the question text just keep the buttons"
+        ]
+      },
+      "acceptanceCriteria": [
+        "On initial load (when not accepted), there is no headline/question text rendered above or around the buttons.",
+        "The existing two-button layout remains functional: the \"No\" button still evades pointer/touch interaction and the \"Yessss miss madam baby ji\" button is still clickable.",
+        "Clicking the \"Yessss miss madam baby ji\" button still triggers the existing confetti effect and shows the existing heart-shaped reveal card."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend immutable paths must not be edited: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui.",
+    "Keep backend as a single Motoko actor (no new services)."
+  ],
+  "nonGoals": [
+    "Do not change the existing button labels or behaviors.",
+    "Do not redesign the page theme, background animation, confetti, or heart reveal card beyond what is necessary to remove the headline text."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

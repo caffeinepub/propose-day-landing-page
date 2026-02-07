@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Build an ultra-cute, cozy, pastel-themed 'Propose Day' landing page with floating hearts, playful evasive 'No' button behavior, and a celebratory confetti + heart-card reveal on 'Yes'—with only the buttons shown (remove the central question text).",
+  "architectural_notes": [
+    "Use JavaScript to randomly reposition the 'No' button on hover/touch to prevent clicks.",
+    "Trigger a confetti animation and reveal a heart-shaped card UI upon clicking the 'Yes' button."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-screen-propose-day-landing-page-with-an-ultra-cute-cozy-pastel-theme-pinks-soft-yellows-creams-and-centered-main-content",
+      "title": "Create a single-screen 'Propose Day' landing page with an ultra-cute, cozy pastel theme (pinks, soft yellows, creams) and centered main content.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-ambient-floating-hearts-background-animation-behind-the-main-content",
+      "title": "Add an ambient floating-hearts background animation behind the main content.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-the-exact-central-proposal-text-chalo-ajj-1-date-decide-kar-hi-lete-hai-yeh-trial-period-ab-khatam-karte-hai-toh-bolo-phir-will-you-be-my-laado-officially",
+      "title": "Display the exact central proposal text: \"Chalo ajj 1 date decide kar hi lete hai, yeh trial period ab Khatam karte hai toh bolo phir will you be my laado officially?\"",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-two-call-to-action-buttons-under-the-central-text-a-smaller-no-button-and-a-larger-pink-glowing-yessss-miss-madam-baby-ji-button",
+      "title": "Implement two call-to-action buttons under the central text: a smaller 'No' button and a larger, pink, glowing 'Yessss miss madam baby ji' button.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-make-the-no-button-evade-interaction-on-hover-mouse-or-touch-pointer-attempt-mobile-reposition-it-to-a-random-on-screen-location-so-it-is-difficult-to-click",
+      "title": "Make the 'No' button evade interaction: on hover (mouse) or touch/pointer attempt (mobile), reposition it to a random on-screen location so it is difficult to click.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-when-the-user-clicks-the-yessss-miss-madam-baby-ji-button-trigger-a-confetti-explosion-and-reveal-a-prominent-heart-shaped-card-containing-the-exact-message-congratulations-you-are-officially-my-laado-now-i-love-youuu",
+      "title": "When the user clicks the 'Yessss miss madam baby ji' button, trigger a confetti explosion and reveal a prominent heart-shaped card containing the exact message: \"CONGRATULATIONS you are officially my laado now!!! I LOVE YOUUU❤️\"",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-central-proposal-question-headline-text-from-the-landing-screen-so-that-before-acceptance-the-ui-shows-only-the-two-existing-call-to-action-buttons-the-evasive-no-button-and-the-glowing-yessss-miss-madam-baby-ji-button-over-the-existing-floating-hearts-background",
+      "title": "Remove the central proposal/question headline text from the landing screen so that, before acceptance, the UI shows only the two existing call-to-action buttons (the evasive \"No\" button and the glowing \"Yessss miss madam baby ji\" button) over the existing floating-hearts background.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create 'Propose Day' pastel landing page with central proposal text, floating hearts, evasive 'No' button, and 'Yes' button triggering confetti + heart-shaped congratulations card",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Remove the central proposal/question text and display only the two CTA buttons",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Propose Day Landing Page",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
